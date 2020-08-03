@@ -248,7 +248,7 @@ public class TunDevice
     {
         while true
         {
-            guard let (data, protocolNumber) = self.read(packetSize: 1) else
+            guard let (data, protocolNumber) = self.read(packetSize: 8192) else
             {
                 return
             }
